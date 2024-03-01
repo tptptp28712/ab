@@ -1,4 +1,5 @@
-
+package dog;
+import java.util.*;
 class Pokemon2 {
     // フィールド変数
     public String number;
