@@ -1,20 +1,19 @@
-package dog3;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-public class ab {
-
-    public static void main(String[] args) {
-        // 呼び出し（new した後で、引数へ与えられた値を元に Pokemon が生成されます）
-        dog.Pokemon2 pikachu = new dog.Pokemon2("こんにちは！ここは日本です！","この寿司はうまい","寿司は和食です","今の現在日時は","です");
-        Date date = new Date();
-		SimpleDateFormat jikan = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-        // 使用時
-        System.out.println(pikachu.number);
-        System.out.println(pikachu.name);
-        System.out.println(pikachu.category);
-        System.out.println(pikachu.type+jikan.format(date)+pikachu.description);
-        
-
+package Main;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args){
+        try (Scanner scanner = new Scanner(System.in)) {
+			String hobbys = scanner.nextLine();
+			  Ken.ken sub = new Ken.ken();
+			 // 昇順or降順
+			 switch(hobbys){
+			 case "昇順":
+					sub.publicMethod();
+			break;
+			case "降順":
+					sub.publicMethod2();
+			break;
+			 }
+		}
     }
 }
-
